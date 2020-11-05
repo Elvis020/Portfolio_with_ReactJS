@@ -1,0 +1,37 @@
+import React from "react";
+import "./App.css";
+import { Container, Grid } from "@material-ui/core";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Header from "./components/Header/Header";
+import Profile from "./components/Profile/Profile";
+import Footer from "./components/Footer/Footer";
+import Resume from "./pages/Resume/Resume";
+import Portfolio from "./pages/Portfolio/Portfolio";
+
+function App() {
+  return (
+    <Container className={"top_60"}>
+      <Grid container spacing={9}>
+        <Grid item xs={12} lg={3} md={4}>
+          {" "}
+          <Profile />
+        </Grid>
+        <Grid item xs>
+          <Router>
+            <Header />
+            <div className="main-content container_shadow">
+              <Switch>
+                <Route exact path="/portfolio" component={Portfolio} />
+                <Route exact path="/" component={Resume} />
+              </Switch>
+            </div>
+          </Router>
+          <Footer />
+        </Grid>
+      </Grid>
+    </Container>
+  );
+}
+
+export default App;
