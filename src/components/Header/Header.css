@@ -11,7 +11,7 @@
     color: darkslategray !important;
 }
 .header_navlink{
-    padding: 0;
+    padding: 0px;
 }
 .header .header_link:hover{
     color: var(--main-color) !important;
@@ -21,6 +21,7 @@
     font-weight: 500;
     color: var(--main-color) !important;
 }
+
 
 .header .header_home{
     background-color: var(--main-color);
@@ -38,8 +39,92 @@
 .header .header_left{
     margin-right: auto;
 }
+.header .header_right a {
+    
+}
+
 .header .header_right > a > .MuiSvgIcon-root{
-    font-size: 16px !important;
     margin-right: 12px;
+    font-size: 16px !important;
     color: #000;
-} 
+    transition: all .4s;
+}
+/* .header .header_right>a>.MuiSvgIcon-root {
+    font-size: 16px !important;
+    margin-right: auto;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+} */
+
+.header .header_right a:hover {
+    transform: scale(1.16) translate(-2px, -4px);
+    transition: all .4s;
+    -webkit-transform: scale(1.16) translate(-2px, -4px);
+    -moz-transform: scale(1.16) translate(-2px, -4px);
+    -ms-transform: scale(1.16) translate(-2px, -4px);
+    -o-transform: scale(1.16) translate(-2px, -4px);
+}
+
+.header .header_right a:nth-child(1) {
+    color: #3b5998;
+}
+
+.header .header_right a:nth-child(2) {
+    color: #00acee;
+    /* box-shadow: 10px 10px 74px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.header .header_right a:nth-child(3) {
+    color: #0e76a8;
+    /* box-shadow: 10px 10px 74px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.header .header_right a:nth-child(4) {
+    color: #211F1F;
+    /* box-shadow: 10px 10px 74px 0px rgba(0, 0, 0, 0.75); */
+}
+
+@media (min-width: 891px) {
+    .header .header_right{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header .header_right a{
+        justify-content: space-around;
+        margin-bottom: 6px;
+        font-size: 20px;
+    }
+    .header .header_right .last {
+        padding-bottom: 5px !important;
+    }
+    
+}
+
+/* @media (min-width: 891px) {
+    .header .header_left{
+        justify-content: space-around;
+        align-items: center;
+    }
+} */
+
+@media (max-width: 891px) {
+    .header .header_left{
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+@media (max-width: 891px) {
+    .header .header_right {
+        justify-content: space-around;
+        margin-bottom: 6px;
+    }
+    .header .header_right a{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header .header_right .last {
+        padding-bottom: 5px !important;
+    }
+}

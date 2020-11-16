@@ -197,11 +197,11 @@ function Resume() {
 
             <Grid item xs={12}>
               <Grid container className='contactInfo_socialsContainer'>
-                {Object.keys(resumeData.socials).map(key => (
+                {/* {Object.keys(resumeData.socials).map(key => (
                   <Grid item className='contactInfo_social'>
                     <a href={resumeData.socials[key].link}> {resumeData.socials[key].icon} </a>
                   </Grid>
-                ))}
+                ))} */}
               </Grid>
             </Grid>
           </Grid>

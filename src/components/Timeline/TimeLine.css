@@ -8,7 +8,7 @@
 }
 
 .timeline .timeline_header{
-    min-height: 80px !important;
+    min-height: 40px !important;
 }
 .timeline .MuiTimelineItem-root {
     min-height: 0px !important;

@@ -23,14 +23,14 @@ function Header(props) {
       <Navbar.Collapse>
           <Nav className="header_left">
               <Nav.Link as={NavLink} to='/' className={pathName == '/' ? 'header_link_active' : 'header_link'} >Resume</Nav.Link>  {/* Resume Link */}
-              <Nav.Link as={NavLink} to='/portfolio' className={pathName == '/portfolio' ? 'header_link_active' : 'header_link'} >Portfolio</Nav.Link>  {/* Resume Link */}
+              <Nav.Link  as={NavLink} to='/portfolio' className={pathName == '/portfolio' ? 'header_link_active' : 'header_link'} >Portfolio</Nav.Link>  {/* Portfolio Link */}
           </Nav>
 
           <div className='header_right'>
               {Object.keys(resumeData.socials).map(key => (
                   <a href={resumeData.socials[key].link} target="_blank">{resumeData.socials[key].icon}</a>
               ))}
-              <CustomButton text={"Hire Me"} icon={<Telegram />} />
+              <CustomButton className='last' text={"Hire Me"} icon={<Telegram />} />
           </div>
       </Navbar.Collapse>
     </Navbar>

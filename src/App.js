@@ -13,8 +13,7 @@ function App() {
   return (
     <Container className={"top_60"}>
       <Grid container spacing={9}>
-        <Grid item xs={12} lg={3} md={4}>
-          {" "}
+        <Grid item xs={12} sm={12} lg={3} md={4}>
           <Profile />
         </Grid>
         <Grid item xs>
