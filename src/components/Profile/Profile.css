@@ -4,11 +4,13 @@
     width: 100%;
     display: inline-block;
 }
-/* @media (max-width: 900px){
-    .profile{
-        display: none;
+@media (min-width: 860px){
+    .elvis__container{
+        transition: 250ms;
+        position: sticky;
+        top: 5%;
     }
-} */
+}
 
 
 .profile_name{

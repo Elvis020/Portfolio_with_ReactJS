@@ -8,6 +8,8 @@ import Profile from "./components/Profile/Profile";
 import Footer from "./components/Footer/Footer";
 import Resume from "./pages/Resume/Resume";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import Services from "./pages/Services/Services";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
               <Switch>
                 <Route exact path="/portfolio" component={Portfolio} />
                 <Route exact path="/" component={Resume} />
+                <Route exact path="/services" component={Services} />
+                <Route exact path="/contact-form" component={Contact} />
               </Switch>
             </div>
           </Router>

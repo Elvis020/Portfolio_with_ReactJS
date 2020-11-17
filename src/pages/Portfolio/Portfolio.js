@@ -6,7 +6,6 @@ import resumeData from "../../Utils/ResumeData";
 function Portfolio() {
   const [tabValue, setTabValue] = useState("All");
   const [projectDialog, setProjectDialog] = useState(false);
-  const [fullWidth, setFullWidth] = React.useState(true);
 
   return (
     <Grid container spacing={1} className="section pb_45 pt_45">

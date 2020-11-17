@@ -51,6 +51,11 @@
   padding: 30px;
 }
 
+.main-content:last-child{
+  min-height: 87vh !important;
+  background-color: red !important;
+}
+
 
 .section_title{
   position: relative;
