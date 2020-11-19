@@ -1,23 +1,19 @@
 // import React from 'react';
-import React from 'react';
-import Facebook from '@material-ui/icons/Facebook'
-import {FaFacebookF,FaTwitter,FaGithub,FaLinkedinIn} from 'react-icons/fa'
-import TwitterIcon from '@material-ui/icons/Twitter'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import GithubIcon from '@material-ui/icons/GitHub';
-import YoutubeIcon from '@material-ui/icons/YouTube';
-import LanguageIcon from '@material-ui/icons/Language';
+import React from "react";
+import { FaFacebookF, FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import GithubIcon from "@material-ui/icons/GitHub";
+import YoutubeIcon from "@material-ui/icons/YouTube";
+import LanguageIcon from "@material-ui/icons/Language";
 import WebOutlined from "@material-ui/icons/WebOutlined";
 import AssignmentOutlined from "@material-ui/icons/AssignmentOutlined";
-
 
 export default {
   name: "Elvis O. Amoako",
   title: "Frontend Developer",
   birthday: "22nd October, 1996",
-  // email: "elvisopoku29@gmail.com",
-  address: "UCC Amamoma",
-  phone: "0 544 181 919",
+  email: "elvisopoku29@gmail.com",
+  address: "UCC Amamoma, Cape Coast-GHANA",
+  phone: "+233 544 181 919",
   socials: {
     Facebook: {
       link: "https://web.facebook.com/elvisso.amoako",
@@ -69,19 +65,14 @@ export default {
   ],
   educations: [
     {
-      title: "Education 1",
-      date: "2020-Present",
-      description: "Commodo nulla mollit ullamco commodo officia dolore amet.Commodo nulla mollit ullamco commodo officia dolore amet.",
+      title: "University of Cape Coast",
+      date: "2015-2019",
+      description: "Bachelor of Science: Engineering Physics",
     },
     {
-      title: "Education 2",
-      date: "2014-2015",
-      description: "Commodo nulla mollit ullamco commodo officia dolore amet.Commodo nulla mollit ullamco commodo officia dolore amet.",
-    },
-    {
-      title: "Education 3",
-      date: "Aug 2016-Sept 2018",
-      description: "Commodo nulla mollit ullamco commodo officia dolore amet.Commodo nulla mollit ullamco commodo officia dolore amet.",
+      title: "KNUST Senior High School",
+      date: "2011-2014",
+      description: "West African Secondary School Certificate(WASSCE): General Science",
     },
   ],
   services: [
@@ -104,7 +95,7 @@ export default {
   skills: [
     {
       title: "FRONT-END",
-      description: ["React JS", "Javascript", "Typescript", "Bootstrap", "Material UI"],
+      description: ["React JS", "Javascript", "Typescript", "Material UI","Angular",'Svelte',"Redux"],
     },
     {
       title: "BACK-END",
